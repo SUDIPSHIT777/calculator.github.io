@@ -16,10 +16,20 @@ document.getElementById("minus").addEventListener('click', () => { symbol.value 
 document.getElementById("plus").addEventListener('click', () => { symbol.value = "+" })
 
 function up1() {
-   if(isNaN(input1.value) || isNaN(input2.value) || isNaN(symbol.value)){
+   if(isNaN(input1.value)){
         input1.value = ''
-        input2.value = ''
-        symbol.value = ''
+   }
+}
+
+function up2(){
+    if(isNaN(input2.value)){
+         input2.value = ''
+   }
+}
+
+function up3(){
+    if(isNaN(symbol.value)){
+         symbol.value = ''
    }
 }
 
