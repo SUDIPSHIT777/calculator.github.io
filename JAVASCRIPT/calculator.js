@@ -16,21 +16,23 @@ document.getElementById("minus").addEventListener('click', () => { symbol.value 
 document.getElementById("plus").addEventListener('click', () => { symbol.value = "+" })
 
 function up1() {
-   if(isNaN(input1.value)){
+    if (isNaN(input1.value)) {
         input1.value = ''
-   }
+    }
 }
 
-function up2(){
-    if(isNaN(input2.value)){
-         input2.value = ''
-   }
+function up3() {
+    if (isNaN(input2.value)) {
+        input2.value = ''
+    }
 }
 
-function up3(){
-    if(isNaN(symbol.value)){
-         symbol.value = ''
-   }
+function up2() {
+    if (isNaN(symbol.value)) {
+        symbol.value = ""
+        Displayresult.innerHTML = '<p style="font-size: 15px;">Symbol must be input on calculator</p>';
+    }
+
 }
 
 function RESULT() {
